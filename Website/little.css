@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+nav {
+    width: 100%;
+    background: #fabe00;
+    overflow: auto;
+}
+
+ul {
+    margin: 0 0 0 150px;
+    color: black;
+}
+
+li {
+    padding: 0px 12px;
+    margin: 0;
+    white-space: nowrap;
+    display: inline-block;
+    color: #fabe00;
+    font-family: 'Lato', sans-serif;
+    padding-right: 80px;
+}
+
+    li::after {
+        content: '';
+        width: 0%;
+        height: 4px;
+        background: white;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    li:hover::after {
+        width: 100%;
+    }
+
+.namcologo img {
+    width: 230px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 150px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+nav a {
+    width: 100px;
+    display: block;
+    padding: 19px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.littlelogo {
+    position:absolute;
+    top: 355px;
+    left:540px;
+    z-index: 2;
+    display:flex;
+}
+.littlenlogo {
+    position:absolute;
+    top: 1043px;
+    left:769px;
+    z-index: 2;
+    display:flex;
+
+}
+.littlebg2{ 
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/bglittle.png);
+    background-color: black;
+    filter: contrast(120%);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top:-10px;
+    z-index:0;
+    display:flex;
+}
+.para1 {
+    color:white;
+   position: absolute;
+   top: 1380px;
+   left: 455px;
+   line-height: 30px;
+   text-align: center;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 23px;
+   line-height: 40px;
+   
+}
+.para2 {
+   color: #fff;
+   position: absolute;
+   top: 2380px;
+   left: 390px;
+   line-height: 30px;
+   text-align: center;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 25px;
+   line-height: 40px;
+   z-index:3;
+}
+.header1{
+    font-family: 'Amatic SC', cursive;
+    z-index:200;
+    color:white;
+    position: absolute;
+    top: 1180px;
+    left: 580px;
+    font-size:90px;
+    letter-spacing: 0.4px;
+
+}
+.comicmc{
+    position:absolute;
+    top:1250px;
+    display:flex;
+}
+.chef{
+    position:absolute;
+    top:1350px;
+    left:1480px;
+    display:flex;
+}
+.blackbg{
+    width:1920px;
+    height:1080px;
+    position:absolute;
+    top:2050px;
+    z-index:1;
+    display:flex;
+}
+#comicvid{
+    position:relative;
+    top:2050px;
+    z-index:6;
+}
+.janitor{
+    position:absolute;
+    top:2590px;
+    z-index:1;
+}
+.header2{
+    font-family: 'Amatic SC', cursive;
+    z-index:200;
+    color:white;
+    position: absolute;
+    top: 2180px;
+    left: 540px;
+    font-size:90px;
+    letter-spacing: 0.4px;
+
+}
+.footer {
+    color:white;
+    position: absolute;
+    top: 3100px;
+    left: 680px;
+    z-index:1;
+    font-family: 'Roboto Flex', sans-serif;
+}
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 25px;
+}
+html{
+    scroll-behavior: smooth;
+}
